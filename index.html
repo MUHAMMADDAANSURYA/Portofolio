@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Muhammad Daan Surya Syah Lana — Backend & Web Developer</title>
+<meta name="description" content="Portfolio Muhammad Daan Surya Syah Lana, mahasiswa Informatika dan developer Backend & Web di Yogyakarta.">
+<meta name="theme-color" content="#0a0a0c">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;800&family=Fraunces:opsz,wght@9..144,300;9..144,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Lewati ke konten</a>
+<header class="nav" id="nav">
+  <a class="logo" href="#home" aria-label="DS — beranda">DS</a>
+  <button class="burger" id="burger" aria-label="Buka menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+  <nav id="menu" aria-label="Navigasi utama">
+    <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="main">
+<section class="hero" id="home">
+  <div class="grid-bg" aria-hidden="true"></div>
+  <div class="hero-visual" aria-hidden="true">
+    <div class="orb"></div>
+    <div class="pane p1"></div><div class="pane p2"></div><div class="pane p3"></div>
+  </div>
+  <div class="wrap hero-in">
+    <p class="role">Backend Developer &nbsp;•&nbsp; Web Developer</p>
+    <h1><span class="line"><span>Muhammad Daan</span></span><span class="line"><span>Surya Syah Lana</span></span></h1>
+    <p class="headline">Building digital systems that solve real problems.</p>
+    <p class="lead">Mahasiswa Informatika yang berfokus pada pengembangan backend, website, sistem digital, dan teknologi untuk menciptakan solusi yang efektif dan terintegrasi.</p>
+    <div class="cta"><a class="btn primary" href="#projects">Explore My Work</a><a class="btn" href="#contact">Contact Me</a></div>
+    <p class="loc">Yogyakarta, Indonesia</p>
+  </div>
+</section>
+
+<section class="sec" id="about">
+  <div class="wrap about">
+    <h2>About me</h2>
+    <div class="about-text">
+      <p class="big">Saya mahasiswa Informatika yang tertarik pada pengembangan teknologi dan sistem digital.</p>
+      <p>Saya senang mempelajari bagaimana sebuah permasalahan dapat dianalisis dan dikembangkan menjadi solusi berbasis teknologi. Saya terus mengembangkan kemampuan melalui proyek, pembelajaran, dan pengalaman membangun solusi digital.</p>
+      <ul class="focus"><li>Backend Development</li><li>Web Development</li><li>API Development</li><li>System Integration</li><li>Digital Transformation</li><li>Artificial Intelligence</li><li>Mobile Application Development</li></ul>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="skills">
+  <div class="wrap">
+    <h2>Skills</h2>
+    <div class="skills" id="skillList"></div>
+  </div>
+</section>
+
+<section class="sec" id="experience">
+  <div class="wrap">
+    <h2>Experience</h2>
+    <article class="timeline">
+      <div class="tl-head"><h3>Backend Developer</h3><p>LERES SAE — BPTI Disperindag DIY</p></div>
+      <div class="tl-body">
+        <p>Berperan dalam pengembangan backend sistem LERES SAE untuk membantu digitalisasi pengelolaan layanan servis.</p>
+        <ul class="ticks">
+          <li>Mengembangkan backend menggunakan Google Apps Script</li><li>Mengembangkan API sistem</li>
+          <li>Mengelola data layanan menggunakan Google Sheets</li><li>Membuat autentikasi Admin dan Teknisi</li>
+          <li>Mengembangkan Role-Based Access</li><li>Membuat pengelolaan status layanan</li>
+          <li>Membuat sistem dashboard</li><li>Mengintegrasikan Google Forms</li>
+          <li>Mengintegrasikan Google Drive untuk dokumentasi foto</li><li>Mengembangkan sistem penugasan teknisi</li>
+          <li>Membantu pengelolaan data stok</li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="sec" id="projects">
+  <div class="wrap">
+    <h2>Featured projects</h2>
+    <div id="featured"></div>
+    <div class="grid" id="projectGrid"></div>
+  </div>
+</section>
+
+<section class="sec contact" id="contact">
+  <div class="wrap">
+    <h2 class="big-h">Let’s build<br>something great.</h2>
+    <p class="lead">Terbuka untuk diskusi, kolaborasi, peluang kerja, internship, dan pengembangan proyek digital.</p>
+    <a class="btn primary" id="getInTouch" href="#contact">Get In Touch</a>
+    <ul class="links" id="contactList"></ul>
+  </div>
+</section>
+</main>
+
+<footer class="foot wrap">
+  <p>© 2026 Muhammad Daan Surya Syah Lana.</p>
+  <p>Designed with precision. Built with passion.</p>
+</footer>
+
+<dialog id="dlg" aria-labelledby="dTitle">
+  <div class="dlg-in">
+    <button class="close" id="dClose" aria-label="Tutup detail">Tutup</button>
+    <div id="dBody"></div>
+  </div>
+</dialog>
+<script src="script.js"></script>
+</body>
+</html>
